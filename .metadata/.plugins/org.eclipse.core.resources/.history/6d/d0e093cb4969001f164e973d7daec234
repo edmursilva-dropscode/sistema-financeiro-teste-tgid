@@ -1,0 +1,9 @@
+package com.example.sistemafinanceiro.repository;
+
+import com.example.sistemafinanceiro.model.Cliente;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
+    // Métodos de consulta personalizados podem ser definidos aqui
+}
+

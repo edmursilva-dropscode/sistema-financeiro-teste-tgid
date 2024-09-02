@@ -1,0 +1,9 @@
+package com.example.sistemafinanceiro.model;
+
+
+import java.util.Set;
+
+
+public class Empresa {
+
+}

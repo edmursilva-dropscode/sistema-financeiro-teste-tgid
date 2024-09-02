@@ -1,0 +1,21 @@
+package com.example.sistemafinanceiro.controller;
+
+import com.example.sistemafinanceiro.model.Empresa;
+import com.example.sistemafinanceiro.service.EmpresaService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/empresas")
+public class EmpresaController {
+
+    @Autowired
+    private EmpresaService empresaService;
+
+    @PostMapping
+    public Empresa create(@RequestBody Empresa empresa) {
+        return empresaService.save(empresa);
+    }
+
+    // Outros endpoints conforme necessário
+}

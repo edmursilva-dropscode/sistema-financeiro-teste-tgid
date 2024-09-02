@@ -1,0 +1,19 @@
+package com.example.sistemafinanceiro.service;
+
+import com.example.sistemafinanceiro.model.Cliente;
+import com.example.sistemafinanceiro.repository.ClienteRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ClienteService {
+
+    @Autowired
+    private ClienteRepository clienteRepository;
+
+    public Cliente save(Cliente cliente) {
+        return clienteRepository.save(cliente);
+    }
+
+    // Outros métodos conforme necessário
+}
